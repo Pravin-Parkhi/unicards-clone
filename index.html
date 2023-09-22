@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+    <div class="app">
+        <header class="app-header">
+            <img src="/assets/brand-logo.svg" class="brand-logo" alt="brand-logo" />
+        </header>
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="left-section">
+                    <p class="tag-line">
+                        <strong>NX Wave.</strong> The next-gen credit card for those who love rewards.
+                    </p>
+                    <p class="sub-tag-line">
+                        <span class="bullet-point">1% Cashback</span>
+                        <span class="bullet-point"><img src="/assets/star.svg" class="star-bullet" alt="star-bullet" />5x Rewards</span>
+                        <span class="bullet-point"><img src="/assets/star.svg" class="star-bullet" alt="star-bullet" />Zero Forex Markup</span>
+                    </p>
+                    <div class="hero-form-wrapper">
+                        <form class="hero-form">
+                            <input value="" class="form-input" placeholder="Enter Phone Number" />
+                            <button class="form-button" id="applyNowBtn" type="button" disabled>Apply Now</button>
+                        </form>
+                        <div class="terms-checkbox-wrapper">
+                            <input type="checkbox" id="termsCheckbox" class="checkbox" />
+                            <label for="checkbox-1" class="checkbox-label">You agree to be contacted by Uni Cards over Call, SMS, Email or WhatsApp to guide you through your application.</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <img src="assets/nx_wave_hero.png" alt="Hero Image" class="hero-img">
+                </div>
+            </div>
+            <video autoplay="" muted="" loop="" playsinline="" class="hero-video">
+                <source src="/assets/nxt_wave_bg.mp4" type="video/mp4">
+            </video>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.2/sass.min.js" integrity="sha512-mA5b7w9mZvGLWgjIqp9KhWNzkkZ/H3gC4Ua6GOn9m/xl1UF4ghH8GsriKvAYxLsxoKvn6NdebW7kZ6iGB3CGSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>

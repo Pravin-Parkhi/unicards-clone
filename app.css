@@ -1,0 +1,151 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+.app{
+    width: 100%;
+    .app-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        min-height: 80px;
+        z-index: 15;
+        padding: 0 45px;
+        box-sizing: border-box;
+        .brand-logo{
+            width: 120px;
+            height: 90px;
+        }
+    }
+    .hero-section{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .hero-content{
+            width: 100%;
+            position: absolute;
+            z-index: 20;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+            @media only screen and (min-width: 600px) {
+                flex-direction: row;
+            }
+            .left-section{
+                padding: 0 24px;
+                max-width: 600px;
+                .tag-line{
+                    font-size: 34px;
+                    text-align: center;
+                    @media only screen and (min-width: 600px) {
+                        font-size: 24px;
+                        text-align: left;
+                    }
+                    @media only screen and (min-width: 1024px) {
+                        font-size: 54px;
+                    }
+                }
+                .sub-tag-line{
+                    font-size: 12px;
+                    display: flex;
+                    justify-content: center;
+                    @media only screen and (min-width: 600px) {
+                        font-size: 14px;
+                        justify-content: flex-start;
+                    }
+                    @media only screen and (min-width: 1024px) {
+                        font-size: 16px;
+                    }
+                    .bullet-point{
+                        margin: 0 4px;
+                        display: flex;
+                        align-items: center;
+                        .star-bullet{
+                            margin-right: 8px;
+                        }
+                    }
+                }
+                .hero-form-wrapper{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    @media only screen and (min-width: 600px) {
+                        align-items: flex-start;
+                    }
+                    .hero-form{
+                        max-width: 300px;
+                        display: flex;
+                        background-color: black;
+                        padding: 4px 8px;
+                        border-radius: 10px;
+                        .form-input{
+                            width: 100%;
+                            background-color: transparent;
+                            outline: none;
+                            border: none;
+                            color: grey;
+                        }
+                        .form-button{
+                            width: 140px;
+                            margin-left: 8px;
+                            border-radius: 8px;
+                            background-color: yellow;
+                            color: grey;
+                            font-size: 14px;
+                            padding: 12px 4px;
+                            outline: none;
+                            border: none;
+                        }
+                        .form-button[disabled=disabled], .form-button:disabled {
+                            background-color: #c4c483;
+                        }
+                    }
+                    .terms-checkbox-wrapper{
+                        padding: 12px 0;
+                        display: flex;
+                        max-width: 300px;
+                        .checkbox{
+                            margin-right: 8px;
+                        }
+                        .checkbox-label{
+                            font-size: 10px;
+                        }
+                    }   
+                }
+            }
+            .right-section{
+                .hero-img{
+                    padding: 0 24px;
+                    width: 200px;
+                    height: 200px;
+                    @media only screen and (min-width: 600px) {
+                        width: 320px;
+                        height: 320px;
+                    }
+                    @media only screen and (min-width: 1024px) {
+                        width: 420px;
+                        height: 420px;
+                    }
+                }
+            }
+        }
+        .hero-video{
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+    }
+}
+
+
